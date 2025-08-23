@@ -1,4 +1,4 @@
-package ejerciciointegradorlab1;
+package perry;
 
 import java.util.Random;
 
