@@ -1,13 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package perry;
+package ejerciciointegradorlab1;
 
-/**
- *
- * @author Ema
- */
-public class PapaCastor {
-    
+import java.util.Random;
+
+
+public class papaCastor {
+
+    private Double longitudCola;
+    private Double velocidadNado;
+
+    public papaCastor(Double longitudCola, Double velocidadNado) {
+        this.longitudCola = longitudCola;
+        this.velocidadNado = velocidadNado;
+    }
+
+
+
+    public double getNadar() {
+        return velocidadNado;
+    }
+
+    public void tocarGuitarra() {
+        Random r = new Random();
+        for (int i = 0; i < 3; i++) {
+            int cuerda = r.nextInt(6) + 1;
+            System.out.println("toca cuerda " + cuerda);
+    }
+    }
 }
