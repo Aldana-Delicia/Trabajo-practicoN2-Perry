@@ -15,13 +15,13 @@ public class OrniAzul extends papaCastor {
         this.propulsion = sc.nextDouble();
     }
 
-    // Sobrescribe el método nadar
+    
     public void nadar() {
         double total = getNadar() + propulsion;
         System.out.println("Nada con propulsión a " + total + " km/h.");
     }
 
-    // Getter para usar en el Comparator
+    
     public double getPropulsion() {
         return propulsion;
     }
