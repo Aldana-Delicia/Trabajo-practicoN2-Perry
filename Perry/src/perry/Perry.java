@@ -17,4 +17,14 @@ public class Perry {
         // TODO code application logic here
     }
     
+
+public interface mamaPata {
+
+    public void tocarOrgano();
+
+    public String getPico();
+
+    public String getPatas();
+}
+
 }
