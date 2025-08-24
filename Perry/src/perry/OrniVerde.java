@@ -2,7 +2,7 @@ package perry;
 
 import java.util.Scanner;
 
-public class OrniVerde extends papaCastor implements mamaPata {
+public class OrniVerde extends PapaCastor implements mamaPata {
 
     private final String pico;
 
@@ -18,7 +18,18 @@ public class OrniVerde extends papaCastor implements mamaPata {
         this.pico = pico;
         this.patas = patas;
     }
+  @Override
+    public String getPico() {
+        return this.pico;
+    }
 
+    @Override
+    public String getPatas() {
+        return this.patas;
+    }
+    
+    
+    
     @Override
     public void tocarOrgano() {
         Scanner leer = new Scanner(System.in);
@@ -33,7 +44,5 @@ public class OrniVerde extends papaCastor implements mamaPata {
         super.tocarGuitarra();
         this.tocarOrgano();
     
-
-      
-  }
+}
 }

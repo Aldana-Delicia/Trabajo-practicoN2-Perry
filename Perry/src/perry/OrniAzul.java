@@ -2,12 +2,12 @@ package perry;
 
 import java.util.Scanner;
 
-public class OrniAzul extends papaCastor {
+public class OrniAzul extends PapaCastor {
 
     private double propulsion;
 
     // Constructor
-    public OrniAzul(Double longitudCola, Double velocidadNado) {
+    public OrniAzul(Double propulsion,Double longitudCola, Double velocidadNado) {
         super(longitudCola, velocidadNado);
 
         Scanner sc = new Scanner(System.in);

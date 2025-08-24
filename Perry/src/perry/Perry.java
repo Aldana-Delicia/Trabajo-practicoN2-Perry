@@ -22,7 +22,7 @@ public class Perry {
         System.out.println("Ingrese la velocidad de nado del Papa Castor (km/h, hasta 8):");
         double velocidadNadoCastor = sc.nextDouble();
         
-         papaCastor castor = new papaCastor(longColaCastor, velocidadNadoCastor);
+         PapaCastor castor = new PapaCastor(longColaCastor, velocidadNadoCastor);
          
          String picoOrniVerde = "6.8 cm";
         String patasOrniVerde = "7.5 cm";
@@ -37,7 +37,7 @@ public class Perry {
          double pronBlui = sc.nextDouble();
          OrniAzul blui = new OrniAzul(pronBlui, longColaCastor, velocidadNadoCastor);
    
-         papaCastor[] ornis = new papaCastor[3];
+         PapaCastor[] ornis = new PapaCastor[3];
        
         
          System.out.println("------------------------------------");
@@ -63,7 +63,7 @@ public class Perry {
         }
         finally{
             System.out.println("Los ornitohermanos estan juntos al fin… ");
-            for (papaCastor o : ornis) {
+            for (PapaCastor o : ornis) {
                 System.out.println(o);
             
         }
@@ -74,7 +74,7 @@ public class Perry {
         
         System.out.println("Lista de nadadores");   
         List<OrniAzul> nadadores = new ArrayList<>();
-        for (papaCastor orni : ornis) {
+        for (PapaCastor orni : ornis) {
             if (orni instanceof OrniAzul) {
                 nadadores.add((OrniAzul) orni);
                 

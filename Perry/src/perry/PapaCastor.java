@@ -3,12 +3,12 @@ package perry;
 import java.util.Random;
 
 
-public class papaCastor {
+public class PapaCastor {
 
     private Double longitudCola;
     private Double velocidadNado;
 
-    public papaCastor(Double longitudCola, Double velocidadNado) {
+    public PapaCastor(Double longitudCola, Double velocidadNado) {
         this.longitudCola = longitudCola;
         this.velocidadNado = velocidadNado;
     }
