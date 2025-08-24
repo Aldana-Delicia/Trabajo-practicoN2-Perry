@@ -19,4 +19,21 @@ public class OrniVerde extends papaCastor implements mamaPata {
         this.patas = patas;
     }
 
+    @Override
+    public void tocarOrgano() {
+        Scanner leer = new Scanner(System.in);
+        System.out.println(" toca el organo: Do-Re-Mi (Apreta Enter) ");
+        leer.hasNextLine();
+        System.out.println("Fa-Sol-La-Si");
+
+    }
+
+    public void tocarGuitorgan() {
+        System.out.println("Esta tocando el Guitorgan ");
+        super.tocarGuitarra();
+        this.tocarOrgano();
+    
+
+      
+  }
 }
